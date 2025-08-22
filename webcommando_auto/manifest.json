@@ -1,0 +1,20 @@
+
+{
+  "manifest_version": 3,
+  "name": "WebCommando",
+  "version": "1.1",
+  "description": "Copie l'outerHTML de l'onglet actif dans le presse-papier (intégré à ScrapCommando).",
+  "permissions": ["scripting", "activeTab", "clipboardWrite", "notifications"],
+  "action": {
+    "default_title": "Copier le HTML de la page"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "copy-html": {
+      "suggested_key": { "default": "Ctrl+Shift+U" },
+      "description": "Copier l'outerHTML (ScrapCommando)"
+    }
+  }
+}
